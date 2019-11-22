@@ -10,7 +10,7 @@ def index():
     if request.method == "POST":
         city = request.form['city']
         country = request.form['country']
-        api_key = "2551ccc05190884ef08f3f4a2ea4f9d1"
+        api_key = "###"
 
         weather_url = requests.get(
             f'http://api.openweathermap.org/data/2.5/weather?appid={api_key}&q={city},{country}&units=imperial')
